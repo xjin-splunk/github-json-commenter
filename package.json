@@ -1,0 +1,32 @@
+{
+  "name": "github-json-commenter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && ncc build lib/main.js",
+    "format": "prettier --write **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xjin-splunk/github-json-commenter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xjin-splunk/github-json-commenter/issues"
+  },
+  "homepage": "https://github.com/xjin-splunk/github-json-commenter#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "@actions/github": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.39",
+    "@vercel/ncc": "^0.34.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.3"
+  }
+}
