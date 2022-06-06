@@ -18,7 +18,7 @@ inputs:
   # you from GitHub automatically.
   token:
     description: 'GitHub token'
-    default: ${{secrets.GIT_API}}
+    default: ${{github.token}}
     required: true
 # We specify the created dist/index.js file
 # as the entrypoint of our action
