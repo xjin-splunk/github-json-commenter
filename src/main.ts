@@ -125,7 +125,7 @@ async function run() {
 
   // Get all comments we currently have...
   // (this is an asynchronous function)
-  const { data: comments } = await octokit.issues.listComments({
+  const { data: comments } = await octokit.rest.issues.listComments({
     ...repo,
     issue_number: pullRequestNumber,
   });
